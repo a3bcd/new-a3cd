@@ -7,81 +7,88 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
---accent: #38bdf8;
---bg-gradient: linear-gradient(135deg, #a5f3fc, #38bdf8);
---text-dark: #0f172a;
---text-light: #334155;
---card-bg: rgba(255,255,255,0.9);
---radius: 16px;
+  --accent: #38bdf8;
+  --bg-gradient: linear-gradient(135deg, #a5f3fc, #38bdf8);
+  --text-dark: #0f172a;
+  --text-light: #334155;
+  --card-bg: rgba(255,255,255,0.9);
+  --radius: 16px;
 }
-
 
 body {
-font-family: 'Poppins','Noto Sans JP', sans-serif;
-background: var(--bg-gradient);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-margin: 0;
-color: var(--text-dark);
+  font-family: 'Poppins','Noto Sans JP', sans-serif;
+  background: var(--bg-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-dark);
 }
-
 
 h1 {
-font-size: 2rem;
-margin-bottom: 1rem;
-font-weight: 700;
-letter-spacing: 1px;
-color: var(--text-dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-dark);
 }
-
 
 .card {
-background: var(--card-bg);
-padding: 28px;
-border-radius: var(--radius);
-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-width: 90%;
-max-width: 480px;
-text-align: center;
-backdrop-filter: blur(10px);
-transition: 0.3s ease;
+  background: var(--card-bg);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
 }
-
 
 button {
-margin-top: 16px;
-background: var(--accent);
-color: white;
-border: none;
-padding: 12px 20px;
-border-radius: 12px;
-font-size: 1rem;
-font-weight: 700;
-cursor: pointer;
-transition: background 0.3s;
-box-shadow: 0 4px 12px rgba(56,189,248,0.3);
+  margin-top: 16px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 12px rgba(56,189,248,0.3);
 }
-
 
 button:hover {
-background: #0ea5e9;
+  background: #0ea5e9;
 }
-
 
 #intro {
-display: none;
-margin-top: 18px;
-color: var(--text-light);
-font-size: 1.1rem;
-line-height: 1.7;
+  display: none;
+  margin-top: 18px;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-
 footer {
-margin-top: 32px;
-font-size: 0.9rem;
-color: var(--text-light);
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>くりの自己紹介</h1>
+    <button onclick="document.getElementById('intro').style.display='block'">
+      自己紹介を見る
+    </button>
+    <p id="intro">こんにちは！「くり」です。Web制作を学んでいます。<br>好きなことはデザインとプログラミングです。よろしくお願いします！</p>
+  </div>
+
+  <footer>© 2025 くり</footer>
+</body>
 </html>
